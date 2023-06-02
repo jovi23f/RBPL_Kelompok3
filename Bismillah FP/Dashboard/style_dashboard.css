@@ -1,0 +1,159 @@
+*{
+    font-family: 'Lexend', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    /* grid-template-columns: 20% 60% 20%; */
+    background-color: #ECEADD;
+}
+
+.sidebar-kiri{
+    order: 1;
+    width: 300px;
+    background: white;
+    border-radius: 0 25px 25px 0;
+}
+
+.sidebar-kiri .logo{
+    display: flex;
+}
+
+.sidebar-kiri .logo img{
+    margin: 25px auto;
+}
+
+.sidebar-kiri .list{
+    display: flex;
+    width: 240px;
+    height: 71px;
+    left: 201px;
+    top: 208px;
+    border-radius: 22px;
+    margin: 25px 25px;
+    padding-left: 10px ;
+}
+
+.sidebar-kiri .list:hover{
+    background: #FFC68F;
+    transition: ease-in-out 100ms;
+}
+
+
+.sidebar-kiri .list .icon{
+    display: flex;
+    height: 40px;
+    width: 40px;
+    margin: auto 0;
+}
+
+.sidebar-kiri .list .menu{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    color: #143362;
+    margin-left: 10px;
+}
+
+.content{
+    order: 2;
+    flex-grow: 4;
+    background-color: #ECEADD;;
+}
+
+.sidebar-kanan{
+    display: grid;
+    grid-template-rows: 10% 20% 6% 34% 5% 25%;
+    order: 3;
+    width: 300px;
+    height: 100vh;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://img.freepik.com/free-vector/gradient-mountain-landscape_23-2149162007.jpg?w=740&t=st=1684284565~exp=1684285165~hmac=df08a23e4806ce7c2de03875c1c4471337375643ba3815704d925e0817456dbf ");
+    background-size: cover;
+    border-radius: 25px 0 0 25px;
+}
+
+.sidebar-kanan .tombol{
+    grid-row: 1;
+    margin-top: 10px;
+}
+
+.sidebar-kanan .tombol #hide{
+    margin: 20px;
+    height: 35px;
+    width: 35px;
+}
+
+.sidebar-kanan .tombol #lonceng{
+    float: right;
+    margin: 20px;
+    height: 35px;
+    width: 35px;
+}
+
+.sidebar-kanan .profilepic{
+    grid-row: 2;
+    margin: auto auto;
+    width: 120px;
+    height: 120px;
+    background-image: url("Logo Icon/Mark.svg"); /*nanti ambil dr database*/
+    background-size: cover;
+	border-radius: 100%;
+}
+
+.sidebar-kanan .name{
+    grid-row: 3;
+    margin: 0 auto;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.sidebar-kanan .status{
+    grid-row: 4;
+    margin: 0 auto;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    display: flex;
+    color: rgba(255, 255, 255, 0.85);
+
+}
+
+.sidebar-kanan .intro{
+    grid-row: 5;
+    margin: auto;
+    display: flex;
+    height: 33px;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.77);
+}
+
+.sidebar-kanan .login{
+    grid-row: 6;
+    margin: 0 auto;
+    display: flex;
+    width: 130px;
+    height: 50px;
+    background: #F3E177;
+    border-radius: 14px;
+}
+
+.sidebar-kanan .login p{
+    margin: auto;
+}
